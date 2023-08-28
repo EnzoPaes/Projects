@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #000;
+}
+
+/* cabecalho*/
+header {
+    width: 100vw;
+    height: 60vh;
+}
+
+.header-introduction {
+    background-color: rgb(216, 13, 13);
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-introduction > img {
+    height: 100%;
+
+    border: 1px solid #000;
+    margin: 20px 0;
+}
+
+.about-header {
+    width: 60%;
+    height: 100%;
+}
+
+/* menu de navegacao */
+.menu {
+    background-color: #0f0f0f;
+    text-align: right;
+    
+    height: 10%;
+    width: 100%;
+
+    padding: 8px 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    width: 100%;
+    margin-right: 7%;
+}
+
+.menu ul li {
+    text-decoration: none;
+
+    display: inline;
+}
+
+/* menu de navegacao mobile (nav-bar) */
+.mobile-menu-icon div {
+    background-color: #fff;
+
+    width: 32px;
+    height: 2px;
+    margin: 8px;
+}
+
+.mobile-menu-icon button {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* textos */
+.menu > h1 {
+    color: #fff;
+    margin-left: 7%;
+}
+
+.about-header > h1 {
+    color: #fff;
+    font-size: 37px;
+}
+
+.about-header > h4 {
+    color: #fff;
+    font-weight: 200;
+}
+
+.menu ul li a {
+    background-color: #161616;
+    color: #fff;
+    text-decoration: none;
+
+    padding: 1%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.menu ul li a:hover {
+    color: rgb(255, 149, 149);
+}
+
+@media screen and (max-width: 900px) {
+    
+    .menu ul li a {
+        display: none;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        display: block;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        display: block;
+    }
+
+    .mobile-menu a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+
+        margin: 10px;
+        padding-top: 1.2rem;
+        display: block;
+    }
+
+    .mobile-menu a:hover {
+        color: rgb(76, 76, 100);
+    }
+}
