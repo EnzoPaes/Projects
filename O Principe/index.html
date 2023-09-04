@@ -15,52 +15,215 @@
     <header>
         <!-- Menu Navegação -->
         <nav class="menu">
-            <!-- Menu navegação (mobile) -->
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </button>
-            </div>
             <h1>Resenhas.com</h1>
             <!-- Menu navegação Desktop -->
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Informações</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Aplicações</a></li>
+                        <li><a href="">Críticas</a></li>
+                        <li><a href="">Legado</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Nomes</a></li>
-                <li><a href="#">Capítulos</a></li>
+                <li><a href="#">Capítulos</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Cap 1</a></li>
+                        <li><a href="">Cap 2</a></li>
+                        <li><a href="">Cap 3</a></li>
+                        <li><a href="">Cap 4</a></li>
+                        <li><a href="">Cap 5</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Agradecimentos</a></li>
             </ul>
         </nav>
-        <!-- Tmporário -->
+        <!-- Botão Menu (mobile) -->
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </div>
+        <!-- Menu de navegação Mobile -->
         <nav class="mobile-menu">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Informações</a>
+                    <ul class="sub-menu-mobile">
+                        <li><a href="">Aplicações</a></li>
+                        <li><a href="">Críticas</a></li>
+                        <li><a href="">Legado</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Nomes</a></li>
-                <li><a href="#">Capítulos</a></li>
+                <li><a href="#">Capítulos</a>
+                    <ul class="sub-menu-mobile">
+                        <li><a href="">Cap 1</a></li>
+                        <li><a href="">Cap 2</a></li>
+                        <li><a href="">Cap 3</a></li>
+                        <li><a href="">Cap 4</a></li>
+                        <li><a href="">Cap 5</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Agradecimentos</a></li>
             </ul>
         </nav>
-        <!-- Título/Introdução -->
-        <article class="header-introduction">
-            <img src="assets/imgs/busto-maquiavel.jpg" alt="busto-maquiavel">
-            <div class="about-header">
-                <h1>Resumo da Obra:</h1>
-                <h1>O Princípe</h1>
-                <br>
-                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A placeat suscipit totam amet ducimus.
-                    Pariatur quam dolorum maiores, eligendi odio deserunt in commodi earum rem ipsa eum quibusdam
-                    dolores possimus.</h5>
-            </div>
-        </article>
     </header>
 
     <!-- Corpo -->
-    <main class="main-introduction">
+    <main class="main-index">
+        <section class="section-introduction">
+            <!-- Título/Introdução -->
+            <article class="article-introduction">
+                <img src="assets/imgs/busto-maquiavel.jpg" alt="busto-maquiavel">
+                <div class="div-about">
+                    <h1>Resumo da Obra:</h1>
+                    <h1>O Princípe</h1>
+                    <br>
+                    <h4>A obra "O Príncipe" é um livro escrito por Nicolau Maquiavel no século XVI. O livro é
+                        considerado um
+                        dos tratados políticos mais influentes da história e oferece orientações sobre como um
+                        governante
+                        deve se comportar para manter e consolidar seu poder.</h4>
+                </div>
+            </article>
+        </section>
+        <br>
+        <section class="section-matters">
+            <article class="article-matters">
+                <h1>Principais Assuntos</h1>
+                <br>
+                <h4> Aqui está um resumo das principais ideias do livro:</h4>
+                <br>
+                <ul>
+                    <!-- 1 -->
+                    <li><b>Natureza do Poder:</b> Maquiavel argumenta que o poder é a principal preocupação de um
+                        príncipe e
+                        que ele deve fazer tudo o que for necessário para mantê-lo.</li>
+                    <!-- 2 -->
+                    <li><b>Virtù e Fortuna:</b> Maquiavel discute a importância de duas forças na política: virtù
+                        (habilidade, astúcia, força de vontade) e fortuna (sorte). Um príncipe deve usar sua virtù para
+                        lidar com as mudanças na fortuna e manter o poder.
+                        ele deve fazer tudo o que for necessário para mantê-lo.</li>
+                    <!-- 3 -->
+                    <li><b>Moralidade Política:</b> Maquiavel aconselha que um príncipe não deve se preocupar
+                        excessivamente
+                        com a moralidade, mas sim fazer o que for necessário para atingir seus objetivos políticos,
+                        incluindo ações cruéis e antiéticas, se necessário.</li>
+                    <!-- 4 -->
+                    <li><b>Relação com os Súditos:</b> O autor argumenta que um príncipe deve ser amado e temido pelos
+                        súditos. Ser amado é ideal, mas se isso não for possível, o príncipe deve ser temido para evitar
+                        revoltas.</li>
+                    <!-- 5 -->
+                    <li><b>Estratégias de Guerra</b> Maquiavel fornece conselhos sobre como um príncipe deve conduzir a
+                        guerra de forma eficaz, incluindo a importância de manter um exército forte e uma defesa eficaz.
+                    </li>
+                    <!-- 6 -->
+                    <li><b>Aconselhamento Político:</b> Ele também enfatiza a importância de bons conselheiros e como um
+                        príncipe
+                        deve ouvir suas opiniões, mas tomar decisões independentes.</li>
+                    <!-- 7 -->
+                    <li><b>Formação do Estado:</b> Maquiavel argumenta que um príncipe deve criar um estado forte e
+                        unificado, usando estratégias como a centralização do poder.</li>
+                    <!-- 8 -->
+                    <li><b>Exemplos Históricos:</b> Ao longo do livro, Maquiavel faz referência a figuras históricas,
+                        como
+                        César Bórgia e outros líderes, para ilustrar suas teorias políticas.</li>
+                </ul>
+            </article>
+            <br>
+            <article class="article-matters">
+                <h1>Contexto Histórico</h1>
+                <br>
+                <h4> Aqui está um resumo contexto histórico da época:</h4>
+                <br>
+                <p>Niccolò Machiavelli, conhecido como Maquiavel, viveu durante o Renascimento italiano, um período de
+                    florescimento cultural e intelectual que ocorreu entre os séculos XIV e XVI. Durante essa época, a
+                    Itália estava dividida em várias cidades-estado, reinos e principados, frequentemente envolvidos em
+                    conflitos políticos e sujeitos à influência de potências estrangeiras, como a França e a Espanha.
+                    Esse contexto histórico tumultuado influenciou profundamente a vida e as ideias de Maquiavel.
 
+                    Maquiavel nasceu em Florença em 1469 e trabalhou como funcionário público em sua cidade natal. Ele
+                    ganhou experiência em questões políticas e militares durante missões diplomáticas, mas sua carreira
+                    política sofreu um golpe quando a família Médici retomou o poder em Florença em 1512. Maquiavel foi
+                    preso, torturado e acusado de conspiração contra os Médici.
+
+                    Foi durante seu período de prisão que Maquiavel escreveu sua obra mais famosa, "O Príncipe". O livro
+                    foi concluído em 1513 e é uma análise pragmática da política e do poder. Maquiavel oferece conselhos
+                    aos governantes sobre como manter o controle e tomar decisões políticas eficazes em um mundo
+                    caracterizado pela instabilidade política e pela competição pelo poder. Sua abordagem é
+                    frequentemente vista como amoral, enfatizando que os líderes devem fazer o que for necessário para
+                    manter o poder.
+
+                    "O Príncipe" foi escrito em italiano, tornando-o mais acessível ao público em geral, incluindo
+                    líderes políticos italianos da época. Embora tenha sido inicialmente mal recebido por muitos de seus
+                    contemporâneos devido à sua natureza pragmática e desprovida de moralidade, o livro teve um impacto
+                    duradouro na teoria política e na forma como o poder é discutido e exercido.
+
+                    O contexto histórico em que "O Príncipe" foi escrito, marcado pela instabilidade política na Itália
+                    e pela luta pelo poder entre as cidades-estado, influenciou profundamente as ideias de Maquiavel
+                    sobre a política e o governo. Sua obra continua a ser estudada e debatida até hoje, e o termo
+                    "maquiavélico" é frequentemente usado para descrever estratégias políticas que priorizam o
+                    pragmatismo sobre a moralidade.</p>
+            </article>
+        </section>
+        <br>
+        <section class="section-characters">
+            <h1>Figuras Históricas</h1>
+            <article class="article-characters">
+                <aside>
+                    <figure class="figure-characters">
+                        <img src="assets/imgs/cesar-borgia.jpg" alt="img">
+                        <h1>César Bórgia</h1>
+                    </figure>
+                    <figure class="figure-characters">
+                        <img src="assets/imgs/fernando-II.jpeg" alt="img">
+                        <h1>Fernando II de Aragão</h1>
+                    </figure>
+                </aside>
+                <aside>
+                    <figure class="figure-characters">
+                        <img src="assets/imgs/lorenzo-de-medici.jpeg" alt="img">
+                        <h1>Lorenzo de Médici</h1>
+                    </figure>
+                    <figure class="figure-characters">
+                        <img src="assets/imgs/luis-XI.jpg" alt="img">
+                        <h1>Luis XI da França</h1>
+                    </figure>
+                </aside>
+            </article>
+            <a href="#">Ver Mais ></a>
+        </section>
+        <section class="section-chapter">
+            <article class="article-chapter">
+                <div class="div-chapter">
+                    <h1>Capítulos do Livro</h1>
+                    <br>
+                    <h2>I - XXVI</h2>
+                    <br>
+                    <p>Aqui estão os capítulos de "O Príncipe", apresentaremos uma breve visão geral dos capítulos
+                        deste influente tratado, que continua a ser estudado e debatido até os dias de hoje. Cada
+                        capítulo
+                        oferece insights valiosos sobre estratégia política, ética e poder, e convida o leitor a
+                        refletir
+                        sobre as complexidades da governança.</p>
+                    <br>
+                    <a href="#">Ver Mais ></a>
+                </div>
+                <aside>
+                    <img src="assets/imgs/livro-aberto.jpg" alt="img">
+                </aside>
+            </article>
+        </section>
     </main>
+    <footer>
+        <p>©️ Enzo Paes - 1° DS Fatec.</p>
+    </footer>
 </body>
+
+<script src="assets/js/main.js"></script>
 
 </html>

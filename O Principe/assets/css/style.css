@@ -12,61 +12,51 @@ body {
 
 /* cabecalho*/
 header {
-    width: 100vw;
-    height: 60vh;
-}
-
-.header-introduction {
-    background-color: rgb(216, 13, 13);
-
     width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.header-introduction > img {
-    height: 100%;
-
-    border: 1px solid #000;
-    margin: 20px 0;
-}
-
-.about-header {
-    width: 60%;
-    height: 100%;
+    position: fixed;
 }
 
 /* menu de navegacao */
 .menu {
-    background-color: #0f0f0f;
+    background-color: #000;
     text-align: right;
-    
-    height: 10%;
     width: 100%;
-
-    padding: 8px 0;
-
+    padding: 12px 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.menu ul {
+.menu > ul {
     width: 100%;
-    margin-right: 7%;
+    list-style: none;
+    margin: 0 7% 0 0;
 }
 
-.menu ul li {
-    text-decoration: none;
-
-    display: inline;
+.menu > ul > li {
+    display: inline-block;
+    position: relative;
 }
 
-/* menu de navegacao mobile (nav-bar) */
+/* sub-menu */
+.menu ul li:hover > .sub-menu {
+    display: block;
+  }
+  
+.sub-menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #1b1b1b;
+}
+  
+.sub-menu > li {
+    width: 100%;
+}
+
+/* botão p/ navegacao mobile */
 .mobile-menu-icon div {
     background-color: #fff;
-
     width: 32px;
     height: 2px;
     margin: 8px;
@@ -76,48 +66,316 @@ header {
     display: none;
 }
 
+/* menu de navegaçao (mobile) */
 .mobile-menu {
     display: none;
 }
 
-/* textos */
-.menu > h1 {
-    color: #fff;
-    margin-left: 7%;
+/* resumo obra */
+.main-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
-.about-header > h1 {
+.article-introduction {
+    background-color: #000;
+    width: 100%;
+    margin: 50px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article-introduction > img {
+    height: 100%;
+    border: 1px solid #000;
+    margin: 20px 0;
+}
+
+.div-about {
+    width: 60%;
+    height: 100%;
+}
+
+.section-matters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.section-matters > .article-matters {
+    background-color: #1b1b1b;
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-matters > article > ul {
+    list-style-type: none;
+}
+
+.section-characters {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-characters {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+
+.article-characters > aside {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.figure-characters {
+    background-color: #1b1b1b;
+    width: 40%;
+    padding: 40px 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure-characters > img {
+    width: 80%;
+}
+
+.section-chapter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-chapter {
+    background-color: #1b1b1b;
+    width: 95.5%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-chapter > aside {
+    width: 70%;
+}
+
+.article-chapter > aside > img {
+    width: 100%;
+    border: solid 1px #000;
+}
+
+.div-chapter {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #1b1b1b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 40px 0 0 0;
+}
+
+/* textos */
+
+/* navegação */
+.menu > h1 {
+    color: rgb(216, 13, 13);
+    font-size: 30px;
+    margin: 0 0 0 7%;
+}
+
+.div-about > h1 {
     color: #fff;
     font-size: 37px;
 }
 
-.about-header > h4 {
+.div-about > h4 {
     color: #fff;
     font-weight: 200;
 }
 
 .menu ul li a {
-    background-color: #161616;
     color: #fff;
     text-decoration: none;
-
-    padding: 1%;
-    margin: 10px;
+    font-weight: 200;
+    padding: 10px 20px;
     border-radius: 5px;
+    display: block;
 }
 
 .menu ul li a:hover {
+    background-color: #222;
     color: rgb(255, 149, 149);
 }
+  
+.sub-menu > a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+  
+.sub-menu a:hover {
+    background-color: #555;
+}
 
-@media screen and (max-width: 900px) {
-    
-    .menu ul li a {
+/* corpo */
+.section-matters > .article-matters > h1 {
+    color: rgb(216, 13, 13);
+    font-size: 30px;
+    margin: 5px;
+}
+
+.section-matters > article > h4 {
+    color: #fff;
+    font-weight: 200;
+    margin: 5px;
+}
+
+.section-matters > .article-matters > ul > li {
+    color: #fff;
+    margin: 5px;
+}
+.section-matters > .article-matters > p {
+    color: #fff;
+}
+
+.figure-characters > h1 {
+    color: #fff;
+    margin: 20px 0 0 0;
+}
+
+.section-characters > h1 {
+    color: rgb(216, 13, 13);
+    font-size: 30px;
+    margin: 0 0 20px 0;
+}
+
+.section-characters > a {
+    color: rgb(216, 13, 13);
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px rgb(216, 13, 13);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.section-characters > a:hover {
+    background-color: #1b1b1b;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+.div-chapter > h1 {
+    color: rgb(216, 13, 13);
+    font-size: 30px;
+}
+
+.div-chapter > h2 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.div-chapter > p {
+    color: #fff;
+}
+
+.div-chapter > a {
+    color: rgb(216, 13, 13);
+    text-decoration: none;
+    padding: 10px;
+    border: solid 1px rgb(216, 13, 13);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.div-chapter > a:hover {
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #fff;
+}
+
+@media screen and (max-width: 1350px) {
+    .section-matters {
+        flex-direction: column;
+    }
+
+    .section-matters > .article-matters {
+        width: 90%;
+        height: 100%;
+        margin: 10px 0;
+    }
+
+    .article-chapter {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .article-characters {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .article-characters > aside {
+        width: 100%;
+        margin: 15px 0;
+        justify-content: space-evenly;
+    }
+
+    .figure-characters {
+        width: 40%;
+    }
+
+    .article-chapter > aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .menu ul {
         display: none;
     }
 
+    .mobile-menu {
+        background-color: #1b1b1b;
+        width: 30%;
+        display: none;
+        position: absolute;
+    }
+
     .mobile-menu-icon button {
-        background-color: transparent;
+        background-color: #030303;
+        width: 100%;
         border: 0;
         cursor: pointer;
         display: block;
@@ -129,21 +387,87 @@ header {
         text-align: center;
     }
 
-    .mobile-menu li {
+    .mobile-menu ul li {
         display: block;
+        width: 100%;
     }
 
-    .mobile-menu a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
+    .mobile-menu, .open {
+        margin: 0;
+    }
 
+    /* sub-menu mobile */
+    .mobile-menu > ul > li > .sub-menu-mobile {
+        display: none;
+        background-color: #1b1b1b;
+        left: 0;
+    }
+
+    .mobile-menu ul li:hover > .sub-menu-mobile {
+        display: block;
+    }
+  
+    .mobile-menu > .sub-menu-mobile li {
+        width: 100%;
+    }
+
+    .section-introduction > article {
+        margin: 100px 0 0 0;
+    }
+
+    /* textos */
+    .menu > h1 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-menu ul li a {
+        color: #fff;
+        font-weight: 200;
+        text-decoration: none;
         margin: 10px;
-        padding-top: 1.2rem;
+        padding: 10px 10px;
+        max-width: 100%;
         display: block;
     }
 
     .mobile-menu a:hover {
-        color: rgb(76, 76, 100);
+        background-color: #222;
+        color: rgb(255, 149, 149);
+    }
+    
+    .sub-menu-mobile a {
+        color: white;
+        display: block;
+    }   
+  
+    .open {
+        display: block;
+    }
+
+    @media screen and (max-width: 605px) { 
+        .article-introduction {
+            flex-direction: column;
+        }
+
+        .div-about {
+            width: 90%;
+        }
+
+        .article-characters > aside {
+            margin: 0;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .figure-characters {
+            width: 90%;
+            margin-top: 20px;
+        }
+
+        .section-characters > h1 {
+            margin: 0;
+        }
     }
 }
