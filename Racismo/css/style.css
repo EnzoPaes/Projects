@@ -1,0 +1,255 @@
+:root {
+    --white: #FFFFFF;
+    --red: #008F28;
+    --red-alpha: #C20101;
+    --marron: #F59F06;
+    --black: #0D0D0D;
+}
+
+a{
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Estilos do Header */
+header {
+    padding: 10px 20px;
+    background-color: #fff;
+    background-color: var(--red);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 500ms;
+}
+
+.fixed{
+    position: fixed;
+    padding: 5px 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--red);
+}
+
+.fixed .app-title{
+    font-size: 1.25em;
+}
+
+.fixed #menu img{
+    width: 35px;
+}
+
+header .app-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header #menu img{
+    width: 50px;
+}
+
+/* Estilos do Main */
+main{
+    margin: 2rem auto;
+    max-width: 920px;
+}
+
+main .description{
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+main ul{
+    font-size: 1.00em;
+    padding: 1rem;
+    display: block;
+    margin-left: 2rem;
+}
+
+main section.content{
+    font-size: 1.5em;
+}
+
+main section.content h2{
+    font-size: 0.90em;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+main .list{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main .list .item{
+    font-size: 0.75em;
+    border-bottom: 1px solid #ccc;
+    width: 250px;
+    height: 120px;
+    padding: 10px;
+}
+
+.item .name{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif !important;
+    overflow-wrap: break-word;
+}
+
+.item .duration{
+    font-weight: 100;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item img{
+    width: 35px;
+}
+
+/* Estilos do Aside */
+aside{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    min-width: 450px; 
+    box-sizing: border-box;
+    transition: 250ms all ease-in;
+}
+
+aside h1{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+aside form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+aside form .field{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 1rem;
+}
+
+.field label{
+    padding-bottom: 7px;
+    position: relative;
+    top: 25px;
+    left: 5px;
+    transition: all 250ms;
+    color: #ccc;
+    font-size: 0.75em;
+    z-index: -1;
+}
+
+.field input{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    font-size: 1.10em;
+    padding: 25px 10px 15px 10px;
+}
+
+
+.field input:focus + label{
+    transform: translateX(20px) scale(1.1);
+    font-size: 0.75em;
+    top: 0px;
+    left: 0px;
+    color: white;
+}
+
+aside .close img{
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.field button{
+    background-color: var(--red);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    height: 50px;
+    color: var(--white);
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.field button:hover{
+    opacity: 0.8;
+}
+
+.active{
+    transform: translateY(-50%) translateX(0%);
+    box-shadow: -5px 0px 5px #333;
+}
+
+
+/* Estilos do Footer */
+footer {
+    margin-top: auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Responsividade */
+@media screen and (max-width: 520px){
+    main{
+        max-width: 90%;
+    }
+    header {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+    main .list .item{
+        width: 100%;
+    }
+
+    aside{
+        min-width: 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
