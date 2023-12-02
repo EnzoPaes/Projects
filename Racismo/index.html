@@ -6,37 +6,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Avaliação Prática de PAM I - Turma A</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>Tipos de Racismo</title>
 </head>
 
 <body>
     <header>
         <h1>Sobre o Racismo</h1>
+
+        <nav class="menu-bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Racismos</a>
+
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Formulário</a></li>
+            </ul>
+        </nav>
+
         <a href="javascript:menuToggle()" id="menu">
             <img src="img/menu.svg" alt="menu button">
         </a>
     </header>
+
     <main>
-        
         <section class="content">
             <h1>Pessoas visitaram: <span id="ajuda-total"></span></h1>
-            <h2>Valor médio por pessoa: <span id="ajuda-media"></span></h2>
+            <h1>Média avaliações: <span id="ajuda-media"></span></h1>
             <div class="list"></div>
         </section>
-
     </main>
+
     <aside>
-        <h1>Nova contribuição</h1>
+        <h1>Avaliações</h1>
         <form onsubmit="return false;" autocomplete="off">
             <div class="field">
                 <input type="text" id="txtpessoa" name="txtpessoa">
-                <label for="txtpessoa">Nome do contribuinte</label>
+                <label for="txtpessoa">Nome do avaliador</label>
 
             </div>
             <div class="field">
                 <input id="txtvalor" name="txtvalor">
-                <label for="txtvalor">Valor da contribuição</label>
+                <label for="txtvalor">Avaliação (0-5)⭐</label>
 
             </div>
             <div class="field">
@@ -45,16 +67,12 @@
         </form>
         <a href="javascript:menuToggle()" class="close"><img src="img/close.svg" alt="Close button"></a>
     </aside>
+
     <footer>
-        <span>Professor: <b>Giovanni Guarnieri</b></span>
-        <span class="student">Aluno: <b>Gabriela Pinheiro</b></span>
     </footer>
 </body>
+
 <script src="js/navigation.js"></script>
 <script src="js/resolution.js"></script>
 
 </html>
-<!-- 
-    :( mevoj ,adanroj asse rop odagirbO
-    !edadivita an etros aoB
--->

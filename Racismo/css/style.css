@@ -6,10 +6,6 @@
     --black: #0D0D0D;
 }
 
-a{
-    text-decoration: none;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +59,7 @@ header #menu img{
 /* Estilos do Main */
 main{
     margin: 2rem auto;
-    max-width: 920px;
+    width: 100%;
 }
 
 main .description{
@@ -81,12 +77,11 @@ main ul{
 
 main section.content{
     font-size: 1.5em;
-}
-
-main section.content h2{
-    font-size: 0.90em;
-    text-align: center;
-    padding: 0.75rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 main .list{
@@ -128,26 +123,21 @@ main .list .item{
 
 /* Estilos do Aside */
 aside{
-    position: fixed;
+    background-color: var(--black);
+    color: var(--white);
     right: 0;
     top: 50%;
-    transform: translateY(-50%) translateX(100%);
+    min-width: 450px; 
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
     padding: 2rem;
-    background-color: var(--black);
-    color: var(--white);
-    min-width: 450px; 
     box-sizing: border-box;
+    position: fixed;
+    transform: translateY(-50%) translateX(100%);
     transition: 250ms all ease-in;
-}
-
-aside h1{
-    margin-top: 1.5rem;
-    text-align: center;
 }
 
 aside form{
@@ -203,11 +193,11 @@ aside .close img{
 
 .field button{
     background-color: var(--red);
+    color: var(--white);
     font-weight: bold;
     border: none;
     outline: none;
     height: 50px;
-    color: var(--white);
     cursor: pointer;
     transition: all 200ms;
 }
@@ -222,16 +212,20 @@ aside .close img{
 }
 
 
-/* Estilos do Footer */
-footer {
-    margin-top: auto;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--black);
-    color: var(--white);
+/* Textoa */
+a{
+    text-decoration: none;
+}
+
+main section.content h2{
+    font-size: 0.90em;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+aside h1{
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
 /* Responsividade */

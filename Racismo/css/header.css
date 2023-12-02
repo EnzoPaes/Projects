@@ -1,0 +1,68 @@
+:root {
+    --white: #FFFFFF;
+    --red: #008F28;
+    --red-alpha: #C20101;
+    --marron: #F59F06;
+    --black: #0D0D0D;
+}
+
+/* Estilos do Header */
+header {
+    padding: 10px 20px;
+    background-color: #fff;
+    background-color: var(--red);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 500ms;
+}
+
+.fixed{
+    position: fixed;
+    padding: 5px 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--red);
+}
+
+.fixed .app-title{
+    font-size: 1.25em;
+}
+
+.fixed #menu img{
+    width: 35px;
+}
+
+header .app-title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header #menu img{
+    width: 50px;
+}
+
+.menu-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar ul li {
+    list-style-type: none;
+}
+
+.menu-bar ul li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 5px;
+    margin: 10px;
+    font-weight: 600;
+}
+
+.menu-bar ul li a:hover {
+    color: #2e2e2e;
+    border-bottom: 2.5px solid #2e2e2e;
+}

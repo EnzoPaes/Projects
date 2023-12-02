@@ -9,28 +9,32 @@ console.log(txtPessoa);
 
 const AJUDAS = [];
 
-
 function atualizarTotal(AJUDAS) {
     ajudaTotal.innerHTML = "";
     var total = 0;
     for (let index = 0; index < AJUDAS.length; index++) {
         total = total + 1;
-
     }
-    ajudaTotal.innerHTML =
-        `${total}`
+
+    ajudaTotal.innerHTML = `${total}`;
     return total;
-    ;
 }
 
 function atualizarMedia(AJUDAS) {
     ajudaMedia.innerHTML = "";
-    var media = 0;
-    var total2 = atualizarTotal(AJUDAS);
-    media = total2 / AJUDAS.length;
+    if (AJUDAS.length === 0) {
 
-    ajudaMedia.innerHTML =
-        `⭐ ${media}`
+        ajudaMedia.innerHTML = "0⭐";
+        return;
+    }
+
+    var soma = 0;
+    for (let index = 0; index < AJUDAS.length; index++) {
+        soma += parseInt(AJUDAS[index].valor);
+    }
+
+    var media = soma / AJUDAS.length;
+    ajudaMedia.innerHTML = `${media.toFixed(2)}⭐`;
 }
 
 function removerAjuda(id) {
