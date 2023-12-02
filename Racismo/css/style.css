@@ -247,3 +247,24 @@ aside h1{
         max-width: 100% !important;
     }
 }
+
+/* ajuste dos textos */
+.racism{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.racism > h2{
+    border-bottom: 3px solid #0D0D0D ;
+    
+}
+.racism > p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.racism > p > u{
+    margin-left: 3%;
+    font-size: 20px;
+}
