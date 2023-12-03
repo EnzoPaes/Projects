@@ -249,6 +249,8 @@ aside h1{
 }
 
 /* ajuste dos textos */
+
+/* index */
 .racism{
     font-size: 18px;
     display: flex;
@@ -261,10 +263,34 @@ aside h1{
     
 }
 .racism > p{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 4% 0 4%;
 }
 .racism > p > u{
     margin-left: 3%;
     font-size: 20px;
+}
+
+/* tipos de racismo */
+
+.definicao{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.definicao > h2{
+    border-bottom: 3px solid #0D0D0D ;
+    
+}
+.definicao > p{
+    margin: 0 10% 0 10%;
+}
+.definicao > p > u{
+    margin-left: 3%;
+    font-size: 20px;
+}
+.definicao > h3 {
+    font-size: 24px;
+    text-align: center;
 }
