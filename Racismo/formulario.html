@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/form.css">
     
         <title>Tipos de Racismo</title>
     </head>
@@ -34,7 +35,7 @@
                     </ul>
 
                 </li>
-                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="formulario.html">Questionário</a></li>
             </ul>
         </nav>
 
@@ -42,6 +43,80 @@
             <img src="img/menu.svg" alt="menu button">
         </a>
     </header>
+
+    <section class="forms" >
+        <form action="url" method="get" class="caixa-pergunta">
+
+            <p>Qual o seu nome?</p>
+            <input type="text" name="nome">
+
+            <br><br>
+
+            <p>Qual sua idade?</p>
+            <input type="number" name="idade">
+
+            <br><br>
+            
+            <p>Ja sofreu algum tipo de racimo?</p>
+            <section class="sim-nao">
+                <p>sim <input type="checkbox"></p>
+                <p>não <input type="checkbox"></p>
+            </section>
+
+            <br><br>
+
+            <p>Qual Desse tipo ja sofreu ?</p>
+            <section class="escolha-tipo">
+                <section class="coluna-um">
+                    <p>Estrutural <input type="checkbox"></p>
+                    <p>Institucional <input type="checkbox"></p>
+                </section>
+                
+                <section class="coluna-dois">
+                    <p>Interpessoal <input type="checkbox"></p>
+
+                    <p>Outro <input type="checkbox"></p>
+                </section>
+            </section>
+
+            <br><br>
+
+            <p>Nos conte brevemente o que aconteceu</p>
+            <input type="text" name="relato" class="relato">
+
+            <br><br>
+
+            <p>Alguem que conhece ja sofreu algum tipo de racimo?</p>
+            <section class="sim-nao">
+                <p>sim <input type="checkbox"></p>
+                <p>não <input type="checkbox"></p>
+            </section>
+
+            <br><br>
+
+            <p>Qual Desse tipo ja sofreu ?</p>
+            <section class="escolha-tipo">
+                <section class="coluna-um">
+                    <p>Estrutural <input type="checkbox"></p>
+                    <p>Institucional <input type="checkbox"></p>
+                </section>
+                
+                <section class="coluna-dois">
+                    <p>Interpessoal <input type="checkbox"></p>
+
+                    <p>Outro <input type="checkbox"></p>
+                </section>
+            </section>
+
+            <br><br>
+
+            <input type="submit" name="enviar" value="Enviar" class="botao">
+            <input type="reset" name="reset" value="Resetar" class="botao">
+
+            <br><br>
+        </form>
+    </section>
+
     
     <footer>
         <p>&copy;Ícaro Redini e Enzo Paes 1º DS-FATEC</p>

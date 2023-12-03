@@ -1,0 +1,51 @@
+.forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+input{
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.sim-nao{
+    display: flex;
+    justify-content: center;
+}
+
+.escolha-tipo{
+    display: flex;
+    justify-content: center;
+}
+.escolha-tipo > .coluna-um{
+    padding: 10px;
+}
+
+.escolha-tipo > .coluna-dois{
+    padding: 10px;
+}
+
+.relato{
+    padding: 40px 70px 40px 70px;
+}
+
+.botao{
+    padding: 25px;
+    font-size: 15px;
+    border-radius: 500px;
+    color: #fff;
+    background-color: #000;
+    border-style: none;
+}
+
+.caixa-pergunta{
+    padding: 30px;
+    margin: 20px;
+    border: solid #000;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+}
