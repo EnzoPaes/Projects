@@ -7,9 +7,10 @@
 }
 
 input{
-    padding: 5px 20px 5px 20px;
-    border-radius: 10px;
-    background-color: #f1f1f1;
+    padding: 5px 50px 5px 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #fff;
 }
 
 .sim-nao{
@@ -47,5 +48,5 @@ input{
     margin: 20px;
     border: solid #000;
     border-radius: 20px;
-    background-color: #f1f1f1;
+    background-color: #e4e3e3;
 }

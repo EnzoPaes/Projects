@@ -101,6 +101,7 @@ nav ul .drop-menu li{
 
 nav ul .tipos:hover>ul{
     display: inherit;
+    /* inherit sifica que vai "herdar" caracteristicas de um elemento "pai" */
 }
 
 nav ul .tipos ul{
