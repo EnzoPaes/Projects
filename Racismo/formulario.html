@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/form.css">
-    
-        <title>Tipos de Racismo</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <title>Tipos de Racismo</title>
+</head>
 
 <body>
     <header>
@@ -44,37 +44,34 @@
         </a>
     </header>
 
-    <section class="forms" >
+    <section class="forms">
         <form action="url" method="get" class="caixa-pergunta">
 
             <p>Qual o seu nome?</p>
             <input type="text" name="nome">
-            <!-- tipo de input é texto, ou seja, para inserir um texto -->
 
             <br><br>
 
             <p>Qual sua idade?</p>
             <input type="number" name="idade">
-            <!-- tipo de input é o numero para inserir qualquer valor, é possivel limitar -->
 
             <br><br>
-            
+
             <p>Ja sofreu algum tipo de racimo?</p>
             <section class="sim-nao">
-                <p>sim <input type="checkbox"></p>
-                <p>não <input type="checkbox"></p>
-                <!-- checkbox é a opção de escolha  -->
+                <p>Sim <input type="checkbox"></p>
+                <p>Não <input type="checkbox"></p>
             </section>
 
             <br><br>
 
-            <p>Qual Desse tipo ja sofreu ?</p>
+            <p>Qual desse tipo ja sofreu?</p>
             <section class="escolha-tipo">
                 <section class="coluna-um">
                     <p>Estrutural <input type="checkbox"></p>
                     <p>Institucional <input type="checkbox"></p>
                 </section>
-                
+
                 <section class="coluna-dois">
                     <p>Interpessoal <input type="checkbox"></p>
 
@@ -84,45 +81,46 @@
 
             <br><br>
 
-            <p>Nos conte brevemente o que aconteceu</p>
+            <p>Nos conte brevemente o que aconteceu:</p>
             <input type="text" name="relato" class="relato">
 
             <br><br>
 
-            <p>Alguem que conhece ja sofreu algum tipo de racimo?</p>
+            <p>Alguém que conhece já sofreu algum tipo de racismo?</p>
             <section class="sim-nao">
-                <p>sim <input type="checkbox"></p>
-                <p>não <input type="checkbox"></p>
+                <p>Sim <input type="checkbox"></p>
+                <p>Não <input type="checkbox"></p>
             </section>
 
             <br><br>
 
-            <p>Qual Desse tipo ja sofreu ?</p>
+            <p>Qual desse tipo ja sofreu?</p>
             <section class="escolha-tipo">
                 <section class="coluna-um">
                     <p>Estrutural <input type="checkbox"></p>
                     <p>Institucional <input type="checkbox"></p>
                 </section>
-                
+
                 <section class="coluna-dois">
                     <p>Interpessoal <input type="checkbox"></p>
-
                     <p>Outro <input type="checkbox"></p>
                 </section>
             </section>
 
             <br><br>
 
-            <input type="submit" name="enviar" value="Enviar" class="botao">
-            <input type="reset" name="reset" value="Resetar" class="botao">
+            <input type="reset" name="enviar" value="Enviar" class="botao" onclick="formSend()">
+            <input type="reset" name="reset" value="Resetar" class="botao" onclick="formReset()">
 
             <br><br>
         </form>
     </section>
 
-    
+
     <footer>
-        <p>&copy;Ícaro Redini e Enzo Paes 1º DS-FATEC</p>
+        <p>&copy; Ícaro Redini e Enzo Paes 1º DS-FATEC</p>
     </footer>
+    <script src="js/resolution.js"></script>
 </body>
+
 </html>

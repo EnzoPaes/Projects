@@ -212,7 +212,7 @@ aside .close img{
 }
 
 
-/* Textos */
+/* Textoa */
 a{
     text-decoration: none;
 }
@@ -250,23 +250,20 @@ aside h1{
 
 /* ajuste dos textos */
 
-    /* index */
+/* index */
 .racism{
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* flex-direction muda a direção em que o display flex irá se organizar */
 }
 .racism > h2{
     border-bottom: 3px solid #0D0D0D ;
-    /* borda somente em baixo\ tamanho, tipo, cor */
     
 }
 .racism > p{
     margin: 0 4% 0 4%;
-  /* margens superior, esquerda, inferior e direita  */
 }
 .racism > p > u{
     margin-left: 3%;
